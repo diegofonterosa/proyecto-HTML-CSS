@@ -243,6 +243,33 @@ tr:nth-child(even){
   display: block; 
 }
 
+.gallery-item {
+  position: relative; /* Necesario para posicionar el overlay */
+  overflow: hidden;
+}
+
+.gallery-item .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  opacity: 0; /* Inicialmente oculto */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1; /* Se muestra al pasar el ratón */
+}
+
+.gallery-item .overlay .caption-overlay {
+  margin: 0; /* Elimina márgenes innecesarios del párrafo */
+  font-size: 0.9em;
+}
+
 #contacto form {
   background-color: #111; 
   padding: 30px;
