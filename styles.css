@@ -14,38 +14,37 @@ body{
 
 header {
   display: flex;
-  flex-direction: column; /* Apilamos el título y el menú */
-  align-items: flex-start; /* Alineamos a la izquierda */
-  justify-content: flex-start; /* Alineamos arriba */
+  flex-direction: column; 
+  align-items: flex-start; 
+  justify-content: flex-start; 
   min-height: 120px;
-  width: 100%; /* Aseguramos que el header sea de ancho completo */
+  width: 100%; 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .header-title {
-  width: 100%; /* El título ocupa todo el ancho */
-  /* text-align: center;  Opcional: Centrar el título */
+  width: 100%; 
 }
 
 .menu {
   display: flex;
-  justify-content: center; /* Centramos el menú horizontalmente */
-  align-items: center; /* Centramos el menú verticalmente (opcional, pero buena práctica) */
-  gap: 50px; /* Espacio entre los elementos del menú */
+  justify-content: center; 
+  align-items: center; 
+  gap: 50px; 
   background-color: #080808;
   padding: 15px;
   border-radius: 5px;
-  width: 100%; /* El menú ocupa todo el ancho */
+  width: 100%; 
 }
 
 .menu ul {
-  display: flex; /* Aseguramos que los items del menu estén en fila */
-  justify-content: center; /* Centramos los items del menú horizontalmente */
-  align-items: center; /* Centramos los items del menú verticalmente (opcional) */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 100%; /* La lista ocupa todo el ancho */
+  width: 100%; 
 }
 
 
@@ -54,8 +53,8 @@ header {
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
-  padding: 5px 10px; /* Añadimos padding a los enlaces */
-  display: block; /* Hacemos los enlaces bloques para que el padding funcione bien */
+  padding: 5px 10px; 
+  display: block; 
 }
 
 .menu a:hover {
@@ -99,7 +98,7 @@ h2 {
   font-weight: 200;
   letter-spacing: 2px;
   padding: 15px;
-  margin-top: 30px;    /* Más espacio arriba */
+  margin-top: 30px;    
   margin-bottom: 30px;
 }
 
@@ -173,7 +172,88 @@ tr:nth-child(even){
   background-color: #060505;
 }
 
+#videos .videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 30px; 
+  width: 90%; 
+  max-width: 1200px; 
+  margin: 20px auto; 
+}
 
+.video-container {
+  background-color: #111; 
+  border-radius: 8px; 
+  overflow: hidden; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  transition: transform 0.3s ease-in-out; 
+}
+
+.video-container:hover {
+  transform: translateY(-5px); 
+}
+
+.video-container iframe {
+  width: 100%; 
+  height: auto; 
+  display: block; 
+}
+
+.video-container h3 {
+  color: #eee;
+  font-size: 1.2em;
+  padding: 15px;
+  text-align: center;
+  font-weight: 400; 
+}
+
+.video-container p {
+  color: #ccc;
+  font-size: 0.9em;
+  padding: 0 15px 15px;
+  text-align: center;
+  text-indent: 0;
+  display: block; 
+}
+
+#galeria .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 20px; 
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.gallery-item {
+  overflow: hidden; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.3s ease-in-out; 
+}
+
+.gallery-item:hover {
+  transform: scale(1.05); 
+}
+
+.gallery-item img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  display: block; 
+}
+
+#contacto form {
+  background-color: #111; 
+  padding: 30px;
+  border-radius: 10px; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); 
+  width: 90%;
+  max-width: 600px; 
+  margin: 20px auto; 
+  display: flex;
+  flex-direction: column; 
+}
 
 footer{
   text-align: center;
