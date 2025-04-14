@@ -19,6 +19,7 @@ header {
   justify-content: flex-start; /* Alineamos arriba */
   min-height: 120px;
   width: 100%; /* Aseguramos que el header sea de ancho completo */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .header-title {
@@ -47,21 +48,19 @@ header {
   width: 100%; /* La lista ocupa todo el ancho */
 }
 
-.menu li {
-  /* No necesitamos estilos especiales para los li, el ul ya los alinea */
-}
 
 .menu a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.2s ease;
+  transition: color 0.3s ease;
   padding: 5px 10px; /* Añadimos padding a los enlaces */
   display: block; /* Hacemos los enlaces bloques para que el padding funcione bien */
 }
 
 .menu a:hover {
-  color: rgb(209, 14, 14);
+  background-color: rgba(243, 157, 25, 0.2);
+  color: #F39D19;
 }
 
 a{
@@ -84,12 +83,24 @@ h1{
   color: #F39D19;
 }
 
-a, h2, h3, h4{
+a,h3, h4{
   text-transform: uppercase;
   font-family: Bebas Neue;
   font-weight: 200;
   letter-spacing: 2px;
   padding: 15px;
+}
+
+h2 {
+  color: #F39D19;
+  text-transform: uppercase;
+  font-family: Bebas Neue;
+  font-size: 2em;
+  font-weight: 200;
+  letter-spacing: 2px;
+  padding: 15px;
+  margin-top: 30px;    /* Más espacio arriba */
+  margin-bottom: 30px;
 }
 
 p{
