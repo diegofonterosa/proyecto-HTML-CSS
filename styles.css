@@ -18,7 +18,7 @@ header {
   align-items: flex-start; 
   justify-content: flex-start; 
   width: 100%; 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px #0000001a;
 }
 
 .header-title {
@@ -48,7 +48,7 @@ header {
 
 
 .menu a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   font-weight: bold;
   transition: all 0.3s ease;
@@ -57,12 +57,12 @@ header {
 }
 
 .menu a:hover {
-  background-color: rgba(243, 157, 25, 0.2);
+  background-color: #f39d1933;
   color: #F39D19;
 }
 
 a{
-  color: white;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -195,7 +195,7 @@ th, td {
 th {
   font-weight: bold;
   background-color: #333;
-  color: rgb(247, 241, 241);
+  color: #f7f1f1;
 }
 tr:nth-child(even){
   background-color: #060505;
@@ -214,7 +214,7 @@ tr:nth-child(even){
   background-color: #111; 
   border-radius: 8px; 
   overflow: hidden; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  box-shadow: 0 4px 8px #0000004d; 
   transition: transform 0.3s ease-in-out; 
 }
 
@@ -257,7 +257,7 @@ tr:nth-child(even){
 .gallery-item {
   overflow: hidden; 
   border-radius: 8px; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 4px 8px #00000033; 
   transition: transform 0.3s ease-in-out; 
 }
 
@@ -282,7 +282,7 @@ tr:nth-child(even){
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.7); 
+  background-color: #000000b3; 
   color: #fff;
   padding: 15px;
   text-align: center;
@@ -303,7 +303,7 @@ tr:nth-child(even){
   background-color: #111; 
   padding: 30px;
   border-radius: 10px; 
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); 
+  box-shadow: 0 6px 12px #00000066; 
   width: 90%;
   max-width: 600px; 
   margin: 20px auto; 
